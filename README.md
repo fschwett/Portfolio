@@ -19,9 +19,9 @@ I mainly work with:
 
 ## Projects included
 
-* #### [Doorbell sniffer](https://github.com/fschwett/Portfolio/edit/main/README.md#doorbell-sniffer) - a minimally invasive RF transmitter for doorbells
+* #### [Doorbell sniffer](https://github.com/fschwett/Portfolio#doorbell-sniffer) - a minimally invasive RF transmitter for doorbells
 
-* #### [RC plane servo PWM to digital](https://github.com/fschwett/Portfolio/edit/main/README.md#rc-plane-servo-pwm-to-digital) - a device translating PWM to digital signals for simple remote controls
+* #### [RC servo PWM to digital](https://github.com/fschwett/Portfolio#rc-servo-pwm-to-digital) - a device that translates PWM to digital signals for simple remote controls
 
 ## Doorbell sniffer
 
@@ -42,7 +42,7 @@ Doorbells in Germany usually operate using SELV (safety extra low voltage) which
 I built the device on perfboard. The rectifier is made of Schottky diodes and I am using a 3000 µF capacitor bank along with some filter caps. To prevent overcurrent, the bank is charged through a resistor. The RF module I ended up using is an ASK transmitter (TX118S) that can directly handle the rectified voltage, making an additional voltage regulator unnecessary. Full calculations and in depth design choices are documented in the corresponding [repo](https://github.com/fschwett/doorbell-sniffer).
 
 
-## RC plane servo PWM to digital
+## RC servo PWM to digital
 
 ### Repo:
 
