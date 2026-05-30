@@ -21,6 +21,8 @@ I mainly work with:
 
 * #### [Doorbell sniffer](https://github.com/fschwett/Portfolio#doorbell-sniffer) - a minimally invasive RF transmitter for doorbells
 
+* #### [Morse code trainer](https://github.com/fschwett/Portfolio#morse-code-trainer) - a simple website for Morse code training
+
 * #### [RC servo PWM to digital](https://github.com/fschwett/Portfolio#rc-servo-pwm-to-digital) - a device that translates PWM to digital signals for simple remote controls
   
 * #### [Resistor array](https://github.com/fschwett/Portfolio#resistor-array) - a classic resistor array for prototyping
@@ -43,6 +45,27 @@ Doorbells in Germany usually operate using SELV (safety extra low voltage) which
 
 I built the device on perfboard. The rectifier is made of Schottky diodes and I am using a 3000 µF capacitor bank along with some filter caps. To prevent overcurrent, the bank is charged through a resistor. The RF module I ended up using is an ASK transmitter (TX118S) that can directly handle the rectified voltage, making an additional voltage regulator unnecessary. Full calculations and in depth design choices are documented in the corresponding [repo](https://github.com/fschwett/doorbell-sniffer).
 
+## Morse code trainer
+
+### Repo:
+
+[github.com/fschwett/morse-trainer](https://github.com/fschwett/morse-trainer)
+
+### Idea:
+
+I wanted a simple website for practicing Morse code with the Koch method on the go. Other websites lacked some of the customization options I wanted, so I built my own.
+
+### Concept:
+
+The Koch method is a widely used method for learning Morse code. When practicing, five characters are played in Morse code and you try to immediately write them down. This makes it closer to learning a language rather than decoding a code, allowing you to become fluent much more quickly. Additionally, not all characters are practiced from the beginning. Instead, you start with only two or three characters and gradually build your way up.
+
+I wanted to have a website that gives me full control over which characters, speeds, and other settings I wanted to practice with. I ended up implementing three different modes for different types of training, each with a number of settings to optimize the learning experience.
+
+### Implementation:
+
+I chose to use a simple HTML/CSS/JS website. I used Bootstrap because I actually wanted to practice Morse code rather than spend endless amounts of time designing fancy GUIs. To play the sounds, I use the Web Audio API.
+
+For a few months, the website ran on an Apache server, until I didn't need it anymore. I wanted to keep it as simple as possible and have a way to access it from any device, so I completely avoided anything that required a complex backend system. I wanted it to run on any device capable of rendering HTML and on any server capable of serving static files. This way, I would not have to worry about migrations—I could simply copy the files to any server at any time and everything would continue to work.
 
 ## RC servo PWM to digital
 
