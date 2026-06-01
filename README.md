@@ -23,7 +23,7 @@ I mainly work with:
 
 * #### [Morse code trainer](https://github.com/fschwett/Portfolio#morse-code-trainer) - a simple website for Morse code training
 
-* #### [RC servo PWM to digital](https://github.com/fschwett/Portfolio#rc-servo-pwm-to-digital) - a device that translates PWM to digital signals for simple remote controls
+<!-- * #### [RC servo PWM to digital](https://github.com/fschwett/Portfolio#rc-servo-pwm-to-digital) - a device that translates PWM to digital signals for simple remote controls -->
   
 * #### [Resistor array](https://github.com/fschwett/Portfolio#resistor-array) - a classic resistor array for prototyping
 
@@ -67,7 +67,7 @@ I chose to use a simple HTML/CSS/JS website. I used Bootstrap because I actually
 
 For a few months, the website ran on an Apache server, until I didn't need it anymore. I wanted to keep it as simple as possible and have a way to access it from any device, so I completely avoided anything that required a complex backend system. I wanted it to run on any device capable of rendering HTML and on any server capable of serving static files. This way, I would not have to worry about migrations—I could simply copy the files to any server at any time and everything would continue to work.
 
-## RC servo PWM to digital
+<!-- ## RC servo PWM to digital
 
 ### Repo:
 
@@ -75,7 +75,7 @@ For a few months, the website ran on an Apache server, until I didn't need it an
 
 ### Idea:
 
-Most simple remote control systems can only output PWM signals for servo control but no digital output. Most remotes have toggle switches to set predefined servo positions. This device converts said signal into a digital output.
+Most simple remote control systems can only output PWM signals for servo control but no digital output. Most remotes have toggle switches to set predefined servo positions. This device converts said signal into a digital output. -->
 
 ## Resistor array
 
